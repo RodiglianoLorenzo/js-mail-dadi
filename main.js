@@ -6,14 +6,22 @@
 
 let EmailList = ["Qiyana@gmail.com","Paperino@gmail.com","Nonsonounwebdevelopment@gmail.com","Fabio@gmail.com"]
 let utente = prompt("Inserisci la tua email")
+//let Messaggio = "Non puoi entrare";
+let Messaggio = false;
 
 for (let i = 0; i < EmailList.length; i++){
     if (EmailList[i] === utente){
-        console.log("Fai parte della lista Puoi entrare");
-       
-    }else{
-        console.log("Non fai parte della lista non puoi entrare");
-         break;
+        Messaggio = true; 
     }
+    
 }
 
+if (Messaggio){
+    console.log("puoi entrae");
+    
+} else{
+    console.log("non puoi entrare");
+    
+}
+
+console.log(Messaggio);
